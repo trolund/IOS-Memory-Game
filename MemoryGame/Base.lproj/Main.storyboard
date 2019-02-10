@@ -314,8 +314,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Denne app er udviklet for at lære grund prencipperne for IOS development af Troels Lund" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TiQ-XQ-ZhW">
-                                <rect key="frame" x="67" y="250" width="240" height="80"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Denne app er udviklet for at lære grund prencipperne for IOS development. Udviklet af Troels Lund" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TiQ-XQ-ZhW">
+                                <rect key="frame" x="67" y="250" width="240" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

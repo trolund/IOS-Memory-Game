@@ -12,8 +12,6 @@
 		9FCF3ADB2210648600B17124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF3AD92210648600B17124 /* Main.storyboard */; };
 		9FCF3ADD2210648800B17124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF3ADC2210648800B17124 /* Assets.xcassets */; };
 		9FCF3AE82210B61300B17124 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF3AE72210B61300B17124 /* MainMenuViewController.swift */; };
-		9FCF3AEC2210D1FC00B17124 /* appGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF3AEB2210D1FC00B17124 /* appGIF.gif */; };
-		9FCF3AEE2210D20300B17124 /* appGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9FCF3AED2210D20300B17124 /* appGIF.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +22,6 @@
 		9FCF3ADC2210648800B17124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCF3AE12210648800B17124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FCF3AE72210B61300B17124 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		9FCF3AEB2210D1FC00B17124 /* appGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = appGIF.gif; path = ../../../../Downloads/appGIF.gif; sourceTree = "<group>"; };
-		9FCF3AED2210D20300B17124 /* appGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = appGIF.gif; path = ../../../Downloads/appGIF.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +38,6 @@
 		9FCF3AC92210648600B17124 = {
 			isa = PBXGroup;
 			children = (
-				9FCF3AED2210D20300B17124 /* appGIF.gif */,
 				9FCF3AD42210648600B17124 /* MemoryGame */,
 				9FCF3AD32210648600B17124 /* Products */,
 			);
@@ -59,7 +54,6 @@
 		9FCF3AD42210648600B17124 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
-				9FCF3AEB2210D1FC00B17124 /* appGIF.gif */,
 				9FCF3AE72210B61300B17124 /* MainMenuViewController.swift */,
 				9FCF3AD52210648600B17124 /* AppDelegate.swift */,
 				9FCF3AD72210648600B17124 /* ViewController.swift */,
@@ -129,9 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCF3ADD2210648800B17124 /* Assets.xcassets in Resources */,
-				9FCF3AEE2210D20300B17124 /* appGIF.gif in Resources */,
 				9FCF3ADB2210648600B17124 /* Main.storyboard in Resources */,
-				9FCF3AEC2210D1FC00B17124 /* appGIF.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
