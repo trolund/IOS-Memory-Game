@@ -35,8 +35,9 @@ class ViewController: UIViewController {
             print(matchCount)
             if matchCount >= emojiArray.count/2{
                 print("Skift!")
-                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Win") as UIViewController
+                let viewController:MainMenuViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Win") as UIViewController as! MainMenuViewController
                 // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+                viewController.flips = flipCount
                 self.present(viewController, animated: true, completion: nil)
             }
         }

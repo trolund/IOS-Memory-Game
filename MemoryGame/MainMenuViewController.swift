@@ -9,10 +9,16 @@
 import UIKit
 
 class MainMenuViewController: UIViewController {
+    
+    var flips = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+         winLabel.text = "You did it in \(flips) flips"
     }
-
+    
+    @IBOutlet weak var winLabel: UILabel!
+    
+    
 }
