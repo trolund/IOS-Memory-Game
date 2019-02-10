@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var emojiArray = ["💩", "👽", "👅", "👀", "🐨", "💩", "👽", "👅", "👀", "🐨"]
+    var emojiArray = ["💩", "👽", "👅", "👀", "🐨", "💩", "👽", "👅", "👀", "🐨"].shuffled()
 
     @IBOutlet var cardButtons: [UIButton]!
     
@@ -38,21 +38,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchCard(_ sender: UIButton) {
+
         flipCount += 1
-        let cardNumber = cardButtons.index(of: sender)!
+        if let cardNumber = cardButtons.index(of: sender){
         print("Cardbutton nr: \(cardNumber)")
         flipcard(withEmoji: emojiArray[cardNumber], on: sender)
+        }else{
+            print("nil button")
+        }
     }
     
     func flipcard(withEmoji emoji: String, on button: UIButton ){
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControl.State.normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 0.7507196534, blue: 0.2720045156, alpha: 1)
+           // button.isEnabled = true
         }
         else{
             button.setTitle(emoji, for: UIControl.State.normal)
             button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            if(!visabaleCards.contains(button)){
             visabaleCards.append(button)
+            }
+            //button.isEnabled = false
         }
     }
     
