@@ -29,6 +29,18 @@ class ViewController: UIViewController {
     }
     
     var emojiArray = ["💩", "👽", "👅", "👀", "🐨", "💩", "👽", "👅", "👀", "🐨"].shuffled()
+    
+    var matchCount = 0 {
+        didSet{
+            print(matchCount)
+            if matchCount >= emojiArray.count/2{
+                print("Skift!")
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Win") as UIViewController
+                // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+                self.present(viewController, animated: true, completion: nil)
+            }
+        }
+    }
 
     @IBOutlet var cardButtons: [UIButton]!
     
@@ -72,6 +84,8 @@ class ViewController: UIViewController {
             
             array.last?.isEnabled = false
             array.last?.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+            
+            matchCount += 1
         }else{
             print("no match!")
             array.last?.setTitle("", for: UIControl.State.normal)
